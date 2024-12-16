@@ -1,7 +1,7 @@
 body{
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    
     background: radial-gradient(90.53% 90.53% at 50% 9.47%, #291A36 0%, #110120 100%);
     color: white;
     font-family: "Roboto", sans-serif;
@@ -13,9 +13,26 @@ header{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    min-height: 10%;
     
 }
+
+header form input{
+    margin: 1em 1em;
+    line-height: 2em;
+    width: 45vw;
+    border-radius: 5px;
+   
+}
+
+
+.user{
+    margin: 0em 5em;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 
 
@@ -27,7 +44,7 @@ footer{
 }
 
 
-footer nav li a{
+a{
     text-decoration: none;
     color:white;
     margin: 1em;
@@ -48,19 +65,9 @@ footer nav li a{
     display : flex;
     flex-direction: row;
 }
-.nav-media a:link{
-    
-    text-decoration: none;
-}
 
-header form input{
-    line-height: 2em;
-    width: 35vw;
-}
 
-main{
-    height: 100%;
-}
+
 
 .top-pics,
 .most-popular {
@@ -74,17 +81,18 @@ main{
 .top-pics img,
 .most-popular img {
     width: 100%;
-    height: 300px;
+    height: 450px;
     object-fit: cover;
     border-radius: 20px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     
 }
 
 .top-pics img:hover,
 .most-popular img:hover {
-    transform: scale(1.05);
+ /*transform: scale(1.04);*/
+ /*z-index: 1;*/
 }
 
 h3{
@@ -92,13 +100,12 @@ h3{
     font-size: x-large;
 }
 
-.film-card{
-    position: relative;
-}
+
 .overlay{
-    position: absolute;
-    color:palegoldenrod;
-    bottom: 0;
-    background-color: azure;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.6em;
+
 }
 
